@@ -15,9 +15,6 @@ Pod::Spec.new do |s|
   s.ios.deployment_target = '9.0'
   s.tvos.deployment_target = '9.0'
 
-  s.dependency 'React'
-  s.dependency 'Fabric'
-  s.dependency 'Crashlytics'
   s.ios.xcconfig = {
     'FRAMEWORK_SEARCH_PATHS' => '"${PODS_ROOT}/Crashlytics/iOS" "${PODS_ROOT}/Fabric/iOS"',
     'OTHER_LDFLAGS' => '-framework Crashlytics -framework Fabric'
